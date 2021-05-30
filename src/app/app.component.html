@@ -1,0 +1,5 @@
+<app-header (selectedEmitter)="onSelectedData($event)"></app-header>
+<div class="container">
+  <app-recipe *ngIf="selectedtab === 'recipe'"></app-recipe>
+  <app-shopping *ngIf="selectedtab === 'shopping'"></app-shopping>
+</div>
